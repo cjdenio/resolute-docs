@@ -24,7 +24,6 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl: "https://github.com/facebook/docusaurus/edit/main/website/",
-          routeBasePath: "/",
         },
         blog: {
           showReadingTime: true,
@@ -42,6 +41,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
+      },
       navbar: {
         title: "Resolute API",
         logo: {
