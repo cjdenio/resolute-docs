@@ -14,6 +14,21 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  --ifm-heading-font-family: "Outfit", sans-serif;
+  --ifm-navbar-background-color: black;
+
+  --ifm-button-background-color: rgb(5, 150, 105);
+  --ifm-button-color: white;
+  --ifm-button-font-weight: normal;
+
+  --ifm-background-color: black !important;
+
+  --ifm-color-primary: rgb(16, 185, 129);
+  /* --ifm-navbar-height: 90px; */
+}
+
+.navbar__title {
+  font-family: "Outfit", sans-serif;
 }
 
 .docusaurus-highlight-code-line {
@@ -23,6 +38,6 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
+html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
