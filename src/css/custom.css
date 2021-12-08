@@ -27,6 +27,10 @@
   /* --ifm-navbar-height: 90px; */
 }
 
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
 .navbar__title {
   font-family: "Outfit", sans-serif;
 }

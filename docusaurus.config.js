@@ -23,14 +23,14 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/facebook/docusaurus/edit/main/website/",
+          editUrl: "https://github.com/resoluteapp/docs/edit/master",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/main/website/blog/",
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     "https://github.com/facebook/docusaurus/edit/main/website/blog/",
+        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -57,12 +57,6 @@ const config = {
             docId: "intro",
             position: "left",
             label: "Tutorial",
-          },
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "API Reference",
           },
           {
             href: "https://useresolute.com/developer/apps",
