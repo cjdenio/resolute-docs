@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Here's a list of OAuth permissions that your application can request from the user.
 
-See [Authenticating with OAuth](docs/oauth.md) for more information on using authentication in your application.
+See [Authenticating with OAuth](docs/quickstart/oauth.md) for more information on using authentication in your application.
 
 | Name               | Description           | Resource                                   |
 | ------------------ | --------------------- | ------------------------------------------ |
