@@ -4,6 +4,8 @@
  * work well for content-centric websites.
  */
 
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #25c2a0;
@@ -16,6 +18,7 @@
   --ifm-code-font-size: 95%;
   --ifm-heading-font-family: "Outfit", sans-serif;
   --ifm-navbar-background-color: black;
+  --ifm-navbar-link-color: rgb(107, 114, 128);
 
   --ifm-button-background-color: rgb(5, 150, 105);
   --ifm-button-color: white;
@@ -24,11 +27,13 @@
   --ifm-background-color: black !important;
 
   --ifm-color-primary: rgb(16, 185, 129);
-  /* --ifm-navbar-height: 90px; */
-}
+  --ifm-navbar-height: 90px;
+  --ifm-toc-border-color: transparent;
 
-.navbar {
-  border-bottom: 1px solid var(--ifm-toc-border-color);
+  --ifm-navbar-padding-horizontal: 2.5rem;
+  --ifm-navbar-padding-vertical: 1.25rem;
+
+  --ifm-color-emphasis-300: #374151 !important;
 }
 
 .navbar__title {
@@ -44,4 +49,20 @@
 
 html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__logo {
+  height: 50px;
+}
+
+.docs-doc-page {
+  border-top: 1px solid #374151;
+}
+
+.navbar__link:hover {
+  text-decoration: underline;
+}
+
+.navbar__link:not(.navbar__link--active):hover {
+  color: rgb(107, 114, 128);
 }

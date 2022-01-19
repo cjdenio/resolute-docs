@@ -7,13 +7,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Resolute API",
-  url: "https://useresolute.com",
+  url: "https://api.useresolute.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "cjdenio", // Usually your GitHub org/user name.
-  projectName: "resolute", // Usually your repo name.
+  favicon: "/img/favicon.ico",
+  organizationName: "resoluteapp",
+  projectName: "docs",
 
   presets: [
     [
@@ -22,15 +22,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/resoluteapp/docs/edit/master",
+          // editUrl: "https://github.com/resoluteapp/docs/edit/main",
+          routeBasePath: "/",
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     "https://github.com/facebook/docusaurus/edit/main/website/blog/",
-        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -46,7 +40,7 @@ const config = {
         disableSwitch: true,
       },
       navbar: {
-        title: "Resolute API",
+        // title: "Resolute API",
         logo: {
           alt: "Resolute logo",
           src: "img/logo.svg",
@@ -54,9 +48,15 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "docs/getting-started",
             position: "left",
-            label: "Tutorial",
+            label: "Documentation",
+          },
+          {
+            type: "doc",
+            docId: "reference/index",
+            position: "left",
+            label: "API Reference",
           },
           {
             href: "https://useresolute.com/developer/apps",
@@ -65,51 +65,6 @@ const config = {
           },
         ],
       },
-      // footer: {
-      //   style: "dark",
-      //   links: [
-      //     {
-      //       title: "Docs",
-      //       items: [
-      //         {
-      //           label: "Tutorial",
-      //           to: "/docs/intro",
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: "Community",
-      //       items: [
-      //         {
-      //           label: "Stack Overflow",
-      //           href: "https://stackoverflow.com/questions/tagged/docusaurus",
-      //         },
-      //         {
-      //           label: "Discord",
-      //           href: "https://discordapp.com/invite/docusaurus",
-      //         },
-      //         {
-      //           label: "Twitter",
-      //           href: "https://twitter.com/docusaurus",
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: "More",
-      //       items: [
-      //         {
-      //           label: "Blog",
-      //           to: "/blog",
-      //         },
-      //         {
-      //           label: "GitHub",
-      //           href: "https://github.com/facebook/docusaurus",
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
