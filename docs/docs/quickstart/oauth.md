@@ -1,5 +1,5 @@
 ---
-sidebar_label: Using OAuth
+title: Using OAuth
 sidebar_position: 2
 ---
 

@@ -55,8 +55,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   height: 50px;
 }
 
-.docs-doc-page {
-  border-top: 1px solid #374151;
+.navbar {
+  border-bottom: 1px solid #374151;
 }
 
 .navbar__link:hover {

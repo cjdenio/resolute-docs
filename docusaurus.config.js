@@ -48,7 +48,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "docs/getting-started",
+            docId: "docs/welcome",
             position: "left",
             label: "Documentation",
           },
@@ -56,7 +56,7 @@ const config = {
             type: "doc",
             docId: "reference/index",
             position: "left",
-            label: "API Reference",
+            label: "API reference",
           },
           {
             href: "https://useresolute.com/developer/apps",
