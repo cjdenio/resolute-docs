@@ -2,6 +2,6 @@
 sidebar_position: 2
 ---
 
-# `Reminders`
+# Reminders
 
 Testing 123...
