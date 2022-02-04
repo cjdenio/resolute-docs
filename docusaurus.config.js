@@ -35,6 +35,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: "wip",
+        content: "These documentation pages are still a work-in-progress.",
+        isCloseable: false,
+        backgroundColor: "rgb(239, 68, 68)",
+        textColor: "white",
+      },
       colorMode: {
         defaultMode: "dark",
         disableSwitch: true,
