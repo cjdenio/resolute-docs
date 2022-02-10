@@ -15,6 +15,16 @@ const config = {
   organizationName: "resoluteapp",
   projectName: "docs",
 
+  scripts: [
+    {
+      src: "https://analytics.useresolute.com/umami.js",
+      async: true,
+      defer: true,
+      "data-website-id": "253d8100-bc75-4b41-af90-b9b56b6bc321",
+      "data-domains": "api.useresolute.com",
+    },
+  ],
+
   presets: [
     [
       "@docusaurus/preset-classic",
